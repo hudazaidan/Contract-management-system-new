@@ -1,22 +1,42 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import "./App.css";
-import "./components/style/hero.css";
-import Header from './components/Components Header/Header';
-import Hero from "./components/Components Header/UI/Hero";
-import Exercises from "./components/Components Header/UI/Exercises";
-import Pricing from "./components/Components Header/UI/Pricing";
-import Footer from "./components/Components Header/UI/Footer";
+import React, { useRef } from 'react';
+
+import Header from "./components/Home/Components Header/Header";
+
+import Footer from './components/Home/Components Header/Footer'
+ 
+import Hero from "./components/Home/Components Header/Hero";
+
+import Form from "./components/Register/form";
 
 
-function App() {
-  return  <>
-  <Header />
-  <Hero />
-  <Exercises />
-  <Pricing />
-  <Footer />
-  </>
+
+
+export default function App() {
+  return (
+    <BrowserRouter>
+    <Header/>
+    <Routes>
+      <Route path="/" element={<Hero/>}/>
+      <Route path="/form" element={<Form/>}/>
+
+
+    
+
+    </Routes>
+      {/* <Route path="/" index element={} />
+      <Routes>
+        
+        <Route path="/Home/components/Header/Header" element={<Header />} />
+         
+        <Route path="/User/UserUpdate/Exercises" element={<Exercises  />} />
+        <Route path="/Admin" element={<Start />} />
+      
+
+
+      </Routes> */}
+      <Footer/>
+    </BrowserRouter>
+  );
 }
-
-export default App;
-
