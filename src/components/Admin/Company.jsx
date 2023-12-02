@@ -113,7 +113,7 @@ function Company() {
                     <td>{contract.email}</td>
                     <td>{contract.signingDate}</td>
                     <td>{contract.ExpirationDate}</td>
-                    <td>30</td>
+                    <td>{contract.cost}</td>
                     <td>{contract.address}</td>
                     <td className="button-group">
                       {contract.status !== 'Accepted' && (
