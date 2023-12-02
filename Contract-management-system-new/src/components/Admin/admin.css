@@ -1,0 +1,120 @@
+/* header {
+    background-color: #eaf2ff;
+    display: flex;
+    justify-content: space-between;
+  }
+  header div:nth-child(2){
+    margin-top: 1%;
+    margin-right: 1%;
+     */
+  /* } */
+  
+  .admin-wrapper {
+    display: flex;
+    height: 91vh;
+  }
+  
+  .admin-wrapper .left-sidebar {
+    width: 20%;
+    height: 100%;
+    background: #eaf2ff;
+  }
+  
+  .admin-wrapper .left-sidebar ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    color: #aa1e15;
+    font-weight: bold;
+  }
+  
+  .admin-wrapper .left-sidebar ul li a {
+    padding: 18px;
+    display: block;
+    border-bottom: 1px solid #004044;
+    text-decoration: none;
+    color: var(--heading-color);
+  }
+  
+  .admin-wrapper .left-sidebar ul li a:hover {
+    background:white;
+  }
+  
+  .admin-wrapper .admin-content {
+    flex: 8 1;
+    height: 100%;
+    padding: 29px 0px 60px;
+    overflow-y: scroll;
+}
+  .admin-content .page-title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.1rem;
+  }
+  thead {
+    width: 100%;
+    text-align: center;
+  }
+  th,
+  td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #d3d3d3;
+  }
+  
+  .edit {
+    color: green;
+  }
+  
+  .delete {
+    color: red;
+  }
+  
+  .publish {
+    color: blue;
+  }
+  
+  .edit:hover,
+  .delete:hover,
+  .publish:hover {
+    text-decoration: underline;
+  }
+  
+  form div {
+    margin-bottom: 15px;
+  }
+  .button-group{
+    display: flex;
+    justify-content: center;
+  }
+  .button-group button {
+    margin-right: 10px; /* Add some spacing between buttons */
+    padding: 8px 16px;
+   
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 4px;
+    width: 85px;
+  }
+  .ac{
+    background-color: #4caf50; 
+  }
+  .ac:hover {
+    background-color: #45a049; 
+  }
+  
+  .re {
+    background-color: #f44336; /* Red color for reject button */
+  }
+  
+  .re:hover {
+    background-color: #d32f2f; /* Darker red color on hover */
+  }
+  
