@@ -10,7 +10,7 @@ import Hero from "./components/Home/Components Header/Hero";
 
 import Form from "./components/Register/form";
 
-
+import Company from "./components/Admin/Company"
 
 
 export default function App() {
@@ -20,7 +20,7 @@ export default function App() {
     <Routes>
       <Route path="/" element={<Hero/>}/>
       <Route path="/form" element={<Form/>}/>
-
+      <Route path="/company" element={<Company/>}/>
 
     
 
